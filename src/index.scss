@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  background-color: $base-color;
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0);
+  }
+}
