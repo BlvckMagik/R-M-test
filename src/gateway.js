@@ -10,6 +10,16 @@ export const fetchCharactersData = currentPage => {
   });
 };
 
+export const fetchEpisodesData = epName => {
+  return fetch(`${baseUrl}/episode?name=${epName}`).then(response => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error('Failed to load data');
+    }
+  });
+};
+
 export const fetchFilteredCharactersData = (
   currentPage,
   filterKey,
