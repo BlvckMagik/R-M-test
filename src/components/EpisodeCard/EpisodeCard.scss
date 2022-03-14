@@ -15,7 +15,47 @@
   -moz-box-shadow: 0px 0px 19px 2px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 0px 19px 2px rgba(34, 60, 80, 0.2);
 
-  &__btn {
+  &__plusbtn {
     font-size: 24px;
+    cursor: pointer;
+  }
+
+  &__crossbtn {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__checkbox {
+    margin-bottom: 2px;
+  }
+
+  &__crossbtn {
+    margin-left: 10px;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+}
+
+.to-watch {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &__text {
+    font-size: larger;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
